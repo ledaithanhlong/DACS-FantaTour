@@ -24,7 +24,154 @@
 <body>
     <main class="wrapper">
         <header class="header">
-            
+            <nav class="navbar">
+                <div class="grid wide">
+                    <div class="navbar-wrap row">
+                        <!-- Logo -->
+                        <div class="col l-2 m-6 c-6">
+                            <a href="/" class="header__logo-link">
+                                <img src="./assets/img/logo.png" alt="" class="header__logo-img">
+                            </a>
+                        </div>
+
+                        <!-- navbar -->
+                        <div class="col l-8 m-0 c-0">
+                            <ul class="navbar__list ">
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__item-link">Trang chủ</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__item-link">Tour trong nước</a>
+                                    <ul class="navbar__subnav">
+                                        <li class="subnav__item subnav__item--hot">
+                                            <a href="#" class="subnav__item-link ">Miền Bắc</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="#" class="subnav__item-link">Miền Trung</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="#" class="subnav__item-link">Miền Nam</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__item-link">Dịch vụ du lịch</a>
+                                    <ul class="navbar__subnav">
+                                        <li class="subnav__item">
+                                            <a href="#" class="subnav__item-link ">Thuê xe</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="#" class="subnav__item-link">Vé máy bay</a>
+                                        </li>
+
+                                        <li class="subnav__item">
+                                            <a href="#" class="subnav__item-link">Coupon du lịch</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__item-link">Về chúng tôi</a>
+                                    <ul class="navbar__subnav">
+                                        <li class="subnav__item subnav__item--new">
+                                            <a href="#" class="subnav__item-link">Đại lý</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="#" class="subnav__item-link">FantaTour</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__item-link">Liên hệ</a>
+                                    <ul class="navbar__subnav">
+                                        <li class="subnav__item">
+                                            <a href="#" class="subnav__item-link">CSKH</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="#" class="subnav__item-link">Feedback</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="#" class="subnav__item-link">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navbar__item navbar__item--booking">
+                                    <a href="#" class="navbar__item-link">Đặt tour ngay</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Offcanvas -->
+                        <div class="col l-1 l-o-1 m-0 m-o-4 c-0">
+                            <div class="navbar__menu-wrapper">
+                                <label for="navbar__menu-input" class="navbar__menu-icon fas fa-bars"></label>
+                                <input type="checkbox" name="" id="navbar__menu-input" hidden>
+                                <div class="navbar__menu">
+                                    <div class="navbar__menu-close">
+                                        <label for="navbar__menu-input"
+                                            class="fas fa-times navbar__menu-close-icon"></label>
+                                    </div>
+                                    <div class="navbar__menu-info">
+                                        <ul class="navbar__menu-list">
+                                            <div class="navbar__menu-head">
+                                                <p>best</p>
+                                                <h3 class="navbar__menu-heading">
+                                                    <span class="yellow-underline">packages</span>
+                                                </h3>
+                                            </div>
+                                            <li class="navbar__menu-item">
+                                                <div style="background-image: url(./assets/img/HaNoi.jpeg);"
+                                                    class="navbar__menu-item-img"></div>
+                                                <div class="navbar__menu-item-info">
+                                                    <a href="#" class="navbar__menu-item-city">Hà Nội - Yên Tử</a>
+                                                    <a href="#" class="navbar__menu-item-location">
+                                                        <i
+                                                            class="navbar__menu-item-location-icon fas fa-map-marker-alt"></i>
+                                                        Miền Bắc
+                                                    </a>
+                                                    <a href="#" class="navbar__menu-item-price"
+                                                        style="--background-color:var(--yellow-grad)">9.800.000 VND</a>
+                                                </div>
+                                            </li>
+
+                                            <li class="navbar__menu-item">
+                                                <div style="background-image: url(./assets/img/Hue.jpg);"
+                                                    class="navbar__menu-item-img"></div>
+                                                <div class="navbar__menu-item-info">
+                                                    <a href="#" class="navbar__menu-item-city">Huế - Quảng Bình</a>
+                                                    <a href="#" class="navbar__menu-item-location">
+                                                        <i
+                                                            class="navbar__menu-item-location-icon fas fa-map-marker-alt"></i>
+                                                        Miền Trung
+                                                    </a>
+                                                    <a href="#" class="navbar__menu-item-price"
+                                                        style="--background-color:var(--red-grad)">8.000.000 VND</a>
+                                                </div>
+                                            </li>
+
+                                            <li class="navbar__menu-item">
+                                                <div style="background-image: url(./assets/img/HCMC.jpeg);"
+                                                    class="navbar__menu-item-img"></div>
+                                                <div class="navbar__menu-item-info">
+                                                    <a href="#" class="navbar__menu-item-city">TP.Hồ Chí Minh [Jog - Sup And Spa Saigon]</a>
+                                                    <a href="#" class="navbar__menu-item-location">
+                                                        <i
+                                                            class="navbar__menu-item-location-icon fas fa-map-marker-alt"></i>
+                                                        Miền Nam
+                                                    </a>
+                                                    <a href="#" class="navbar__menu-item-price"
+                                                        style="--background-color:var(--purple-grad)">3.500.000 VND</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
     </main>
 </body>
