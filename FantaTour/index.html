@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FantaTour</title>
-    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/logo-demo.png" type="image/x-icon">
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
+
+<!-- JS Files -->
+<script src="./assets/js/countdown.js"></script>
 
 <body>
     <main class="wrapper">
@@ -175,7 +178,7 @@
                                             <div class="package-overlay">
                                                 <div class="package-info">
                                                     <h3 class="package-heading">Việt Nam</h3>
-                                                    <span class="package-desc">3 packages</span>
+                                                    <span class="package-desc">3 gói ưu đãi</span>
                                                 </div>
                                             </div>
 
@@ -249,19 +252,27 @@
             <div class="search" style="background-image: url(./assets/img/PuLuong.png);">
                 <div class="search__wrap">
                     <div class="search__head">
-                        <h2>Search your next holiday</h2>
+                        <h2>Tìm kỳ nghỉ lý tưởng</h2>
                         <span>Xem khuyến mãi FantaTour</span>
                     </div>
                     <form action="" class="search__form">
                         <select name="" id="" class="search__selection">
                             <option value="" class="search__option">Chọn chuyến đi của bạn...</option>
-                            <option value="" class="search__option">europe</option>
-                            <option value="" class="search__option">&nbsp; - italy</option>
-                            <option value="" class="search__option">&nbsp; - netherlands</option>
-                            <option value="" class="search__option">asia</option>
-                            <option value="" class="search__option">&nbsp; - thailand</option>
-                            <option value="" class="search__option">United states</option>
-                            <option value="" class="search__option">oceania</option>
+                            <option value="" class="search__option">Miền Bắc</option>
+                            <option value="" class="search__option">&nbsp; Đông Bắc - Tây Bắc</option>
+                            <option value="" class="search__option">&nbsp; Hà Nội</option>
+                            <option value="" class="search__option">&nbsp; Hải Phòng</option>
+                            <option value="" class="search__option">&nbsp; Sa Pa</option>
+                            <option value="" class="search__option">Miền Trung</option>
+                            <option value="" class="search__option">&nbsp; Tây Nguyên</option>
+                            <option value="" class="search__option">&nbsp; Nha Trang</option>
+                            <option value="" class="search__option">&nbsp; Huế</option>
+                            <option value="" class="search__option">&nbsp; Nghệ An</option>
+                            <option value="" class="search__option">Miền Nam</option>
+                            <option value="" class="search__option">&nbsp; Phú Quốc</option>
+                            <option value="" class="search__option">&nbsp; Miền Tây</option>
+                            <option value="" class="search__option">&nbsp; Côn Đảo</option>
+                            <option value="" class="search__option">&nbsp; Hồ Tràm - Vũng Tàu</option>
                         </select>
                         <input type="submit" value="" id="search__form-submit" hidden>
                         <label for="search__form-submit" class="fas fa-search search__form-submit-icon"></label>
@@ -302,6 +313,286 @@
             </div>
         </header>
 
+        <div class="web-content">
+            <div class="package-menu grid wide">
+                <div class="package-menu__head">
+                    <p>ĐỀ XUẤT</p>
+                    <h3 class="package-menu__heading"><span class="green-underline">ĐIỂM ĐẾN ĐƯỢC ƯA CHUỘNG</span></h3>
+                </div>
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">
+                        <div class="package">
+                            <div class="package-img" style="background-image: url(./assets/img/HaLong.jpg);">
+                            </div>
+                            <div class="package-overlay">
+                                <div class="package-info">
+                                    <h3 class="package-heading">Miền Bắc</h3>
+                                    <span class="package-desc">3 gói ưu đãi</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="mobile-package__link"></a>
+                            <div class="package-cover hide-on-mobile-tablet">
+
+                                <h4 class="package-cover-head">Gói ưu đãi</h4>
+                                <ul class="package-list">
+                                    <li class="package-item">
+                                        <a href="#" class="package-link">Móng Cái - Hạ Long</a>
+                                    </li>
+                                    <li class="package-item">
+                                        <a href="#" class="package-link">Hà Nội - Ninh Bình</a>
+                                    </li>
+                                    <li class="package-item">
+                                        <a href="#" class="package-link">Hải Phòng - Tam Đảo</a>
+                                    </li>
+                                </ul>
+                                <div class="package-btn">
+                                    <a href="#" class="package-btn-link">Xem điểm đến</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="package">
+                            <div class="package-img" style="background-image: url(./assets/img/MienTrung.jpg);">
+                            </div>
+                            <div class="package-overlay">
+                                <div class="package-info">
+                                    <h3 class="package-heading">Miền Trung</h3>
+                                    <span class="package-desc">1 gói ưu đãi</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="mobile-package__link"></a>
+                            <div class="package-cover hide-on-mobile-tablet">
+
+                                <h4 class="package-cover-head">Gói ưu đãi</h4>
+                                <ul class="package-list">
+                                    <li class="package-item">
+                                        <a href="#" class="package-link">Đà Nắng - Hội An</a>
+                                    </li>
+                                </ul>
+                                <div class="package-btn">
+                                    <a href="#" class="package-btn-link">Xem điểm đến</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="package">
+                            <div class="package-img" style="background-image: url(./assets/img/MienNam.jpg);">
+                            </div>
+                            <div class="package-overlay">
+                                <div class="package-info">
+                                    <h3 class="package-heading">Miền Nam</h3>
+                                    <span class="package-desc">2 gói ưu đãi</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="mobile-package__link"></a>
+                            <div class="package-cover hide-on-mobile-tablet">
+
+                                <h4 class="package-cover-head">Gói ưu đãi</h4>
+                                <ul class="package-list">
+                                    <li class="package-item">
+                                        <a href="#" class="package-link">Phú Quốc - Bãi Sao</a>
+                                    </li>
+                                    <li class="package-item">
+                                        <a href="#" class="package-link">Côn Đảo</a>
+                                    </li>
+                                </ul>
+                                <div class="package-btn">
+                                    <a href="#" class="package-btn-link">Xem điểm đến</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="package">
+                            <div class="package-img" style="background-image: url(./assets/img/MienBac.jpg);">
+                            </div>
+                            <div class="package-overlay">
+                                <div class="package-info">
+                                    <h3 class="package-heading">Tây Bắc</h3>
+                                    <span class="package-desc">1 gói ưu đãi</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="mobile-package__link"></a>
+                            <div class="package-cover hide-on-mobile-tablet">
+
+                                <h4 class="package-cover-head">Gói ưu đãi</h4>
+                                <ul class="package-list">
+                                    <li class="package-item">
+                                        <a href="#" class="package-link">Pù Luông - Mộc Châu</a>
+                                    </li>
+                                </ul>
+                                <div class="package-btn">
+                                    <a href="#" class="package-btn-link">Xem điểm đến</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="package">
+                            <div class="package-img" style="background-image: url(./assets/img/TayNguyen.jpg);">
+                            </div>
+                            <div class="package-overlay">
+                                <div class="package-info">
+                                    <h3 class="package-heading">Tây Nguyên</h3>
+                                    <span class="package-desc">1 gói ưu đãi</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="mobile-package__link"></a>
+                            <div class="package-cover hide-on-mobile-tablet">
+
+                                <h4 class="package-cover-head">Gói ưu đãi</h4>
+                                <ul class="package-list">
+                                    <li class="package-item">
+                                        <a href="#" class="package-link">PleiKu - KonTum - Măng Đen</a>
+                                    </li>
+                                </ul>
+                                <div class="package-btn">
+                                    <a href="#" class="package-btn-link">Xem điểm đến</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="package">
+                            <div class="package-img" style="background-image: url(./assets/img/MienTay.webp);">
+                            </div>
+                            <div class="package-overlay">
+                                <div class="package-info">
+                                    <h3 class="package-heading">Tây Nam Bộ</h3>
+                                    <span class="package-desc">1 gói ưu đãi</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="mobile-package__link"></a>
+                            <div class="package-cover hide-on-mobile-tablet">
+
+                                <h4 class="package-cover-head">Gói ưu đãi</h4>
+                                <ul class="package-list">
+                                    <li class="package-item">
+                                        <a href="#" class="package-link">Bến Tre - Trà Vinh - Vĩnh Long</a>
+                                    </li>
+                                </ul>
+                                <div class="package-btn">
+                                    <a href="#" class="package-btn-link">Xem điểm đến</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner">
+                <div class="banner__full-width s-full-width "
+                    style="background-image: url(./assets/img/cau-vang.jpg);">
+
+                    <h3 class="banner__heading"><span class="red-underline">Kỳ nghỉ</span><br>tiếp theo của bạn</h3>
+                    <div class="banner__btn" style="--btn-color: var(--red-color)">
+                        <a href="#" class="banner__link">Xem tất cả các gói</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="special">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 m-12 c-12">
+                            <div class="special-info">
+                                <div class="special__head">
+                                    <span class="special__location">Tour Huế</span>
+                                    <h3 class="special__heading">Cảnh đẹp <span class="blue-underline">CỐ ĐÔ</span>
+                                    </h3>
+                                </div>
+                                <div class="special__desc">
+                                    <p class="special__desc-paragraph">
+                                        Du lịch Huế. Nhắc đến Huế, ai cũng muốn một lần được chiêm ngưỡng các cung điện, đền đài mang hơi thở cổ xưa như Đại Nội, 
+                                        Ngọ Môn, Chùa Thiên Mụ, Lăng Tự Đức…
+                                    </p>
+                                    <p class="special__desc-paragraph">
+                                        Nét dịu dàng thư thái khi du khách ngồi thuyền rồng sông Hương thưởng thức ca hò Huế, 
+                                        thả hoa đăng cầu phúc lộc cũng được du khách yêu
+                                    </p>
+                                </div>
+                                <div class="special__price">
+                                    <span class="special__old-price">13.150.000 VND</span>
+                                    <span class="special__current-price">10.500.000 VND</span>
+                                    <span class="special__price-unit">/ người</span>
+                                </div>
+                                <a href="#" class="special__book-link">Đặt lịch ngay</a>
+                            </div>
+                        </div>
+                        <div class="col l-7 l-o-1 m-12 c-12">
+                            <div class="special__img-wrap">
+                                <div class="special__img"
+                                    style="background-image: url(./assets/img/CoDoHue.jpg);">
+                                </div>
+
+                                <div class="special__duration">
+                                    <div class="special__duration-item">
+                                        <div class="special__duration-number" id="days">000</div>
+                                        <div class="special__duration-unit">days</div>
+                                    </div>
+                                    <div class="special__duration-item">
+                                        <div class="special__duration-number" id="hours">00</div>
+                                        <div class="special__duration-unit">hours</div>
+                                    </div>
+                                    <div class="special__duration-item">
+                                        <div class="special__duration-number" id="minutes">00</div>
+                                        <div class="special__duration-unit">minutes</div>
+                                    </div>
+                                    <div class="special__duration-item">
+                                        <div class="special__duration-number" id="seconds">00</div>
+                                        <div class="special__duration-unit">seconds</div>
+                                    </div>
+                                </div>
+                                
+
+                                <script>
+                                    const now = new Date().getTime();
+                                    const countdownTime = now + (7 * 24 * 60 * 60 * 1000) + (3 * 24 * 60 * 60 * 1000) + (5 * 60 * 60 * 1000) + (24 * 60 * 1000);
+                                  
+                                    const countdown = setInterval(function () {
+                                      const currentTime = new Date().getTime();
+                                      const distance = countdownTime - currentTime;
+                                  
+                                      if (distance < 0) {
+                                        clearInterval(countdown);
+                                        document.getElementById("days").innerHTML = "000";
+                                        document.getElementById("hours").innerHTML = "00";
+                                        document.getElementById("minutes").innerHTML = "00";
+                                        document.getElementById("seconds").innerHTML = "00";
+                                      } else {
+                                        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                  
+                                        document.getElementById("days").innerHTML = days.toString().padStart(3, '0');
+                                        document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+                                        document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+                                        document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+                                      }
+                                    }, 1000);
+                                  </script>                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 </body>
