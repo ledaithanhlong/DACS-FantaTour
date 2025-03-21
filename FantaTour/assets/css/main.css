@@ -533,10 +533,12 @@
 }
 
 .search__head {
-  background-color: rgba(0, 0, 0, 0.4); /* màu đen mờ 40% */
   color: var(--white-color);
   text-align: center;
   border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3); /* Nền mờ */
+  backdrop-filter: blur(4px);
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9); /* Đậm & rộng hơn */
 }
 
 .search__head h2 {
@@ -550,6 +552,7 @@
   font-size: 2rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .search__form {
@@ -597,19 +600,26 @@
 .search__aside {
   position: relative;
   top: 50px;
+  display: flex;         /* Sắp xếp ngang hàng */
+  justify-content: space-around; /* Canh đều */
+  flex-wrap: wrap;       /* Nếu màn hình nhỏ, sẽ xuống hàng */
+  gap: 12px;             /* Khoảng cách giữa các ô */
 }
 
 .search__aside-item {
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center; /* Nội dung giữa ô */
   align-items: center;
-  margin-top: 12px;
   border-radius: 20px;
+  width: 150px;       /* Kích thước cố định */
+  height: 150px;
   line-height: 1.5;
+  padding: 12px;
 }
 
 .search__aside-img {
@@ -687,6 +697,7 @@
   text-align: center;
   margin-top: 28px;
   margin-bottom: 28px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .banner__link {
@@ -897,10 +908,14 @@
   display: block;
   background-position: center;
   background-size: cover;
+  height: 250px;  /* Chiều cao cố định */
+  overflow: hidden;  /* Ẩn phần dư */
 }
 
 .tour__img img {
   width: 100%;
+  height: 100%; /* Bắt buộc chiếm đủ chiều cao */
+  object-fit: cover; /* Giữ tỷ lệ, cắt phần thừa */
 }
 
 .tour__detail {
@@ -944,6 +959,7 @@
 .tour__type--second-line {
   display: flex;
   align-items: center;
+  gap: 6px; /* Khoảng cách giữa các mục */
 }
 
 .tour__type-name {
@@ -994,7 +1010,7 @@
 
 .tour__price {
   text-decoration: none;
-  display: flex;
+  display: column;
   align-items: baseline;
 }
 
@@ -1003,13 +1019,17 @@
   font-size: 2rem;
   font-weight: 400;
   text-decoration: line-through;
+  margin: 2px 0 0 0;  /* Kéo sát giá mới */
   margin-right: 12px;
+  
 }
 
 .tour__price--current {
   color: var(--heading-color);
   font-size: 2.4rem;
   font-weight: 400;
+  margin: 2px 0 0 0;  /* Kéo sát giá mới */
+  line-height: 1;
 }
 
 .tour__desc {
@@ -1041,7 +1061,7 @@
 }
 
 .footer {
-  background-image: url(../img/footer-background.jpg);
+  background-image: url(../img/FooterBackground2.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -1097,6 +1117,7 @@
   padding: 35px 30px 80px;
   background-color: var(--white-color);
   position: relative;
+  border-radius: 20px;
 }
 
 .footer__logo {
@@ -1168,4 +1189,5 @@
   font-size: 2rem;
   line-height: 50px;
   text-align: center;
+  border-radius: 20px;
 }
