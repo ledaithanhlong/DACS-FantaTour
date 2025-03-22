@@ -435,6 +435,8 @@
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 2px;
+  color: #ffffff; /* màu chữ sáng */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* đổ bóng */
 }
 
 .package-desc {
@@ -442,6 +444,8 @@
   font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 2px;
+  color: #ffffff; /* màu chữ sáng */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* đổ bóng */
 }
 
 .package-cover {
@@ -806,7 +810,7 @@
 .special__duration {
   position: absolute;
   display: flex;
-  background-color: var(--blue-color);
+  background: linear-gradient(135deg, #00bfa6, #1de9b6); /* Gradient xanh ngọc */
   width: 520px;
   max-width: 100%;
   height: 114px;
@@ -815,36 +819,69 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  padding: 12px;
+}
+
+.special__duration {
+  position: absolute;
+  display: flex;
+  background: rgba(255, 255, 255, 0.85); /* Nền trắng mờ */
+  border: 2px solid #a0522d; /* Viền nâu gạch */
+  width: 520px;
+  max-width: 100%;
+  height: 114px;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  backdrop-filter: blur(6px);
 }
 
 .special__duration-item {
   text-transform: uppercase;
-  color: var(--white-color);
+  color: #4b2e1e; /* Nâu trầm */
   text-align: center;
   position: relative;
+  transition: transform 0.3s ease;
+  font-family: 'Georgia', serif; /* Phông chữ cổ điển */
+}
+
+.special__duration-item:hover {
+  transform: scale(1.05);
 }
 
 .special__duration-number {
-  font-size: 2.6rem;
-  line-height: 2.4rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: bold;
+  color: #8b4513; /* Nâu đất */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
 }
 
 .special__duration-unit {
   padding: 4px 0;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2rem;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  color: #4b2e1e;
+  opacity: 0.9;
 }
 
 .special__duration-item:not(:last-child)::after {
-  content: "/";
+  content: "|";
   position: absolute;
-  color: #13b2cd;
-  font-weight: 400;
-  font-size: 5rem;
-  right: -36px;
+  color: #a0522d;
+  font-weight: normal;
+  font-size: 2.4rem;
+  right: -24px;
   top: 50%;
   transform: translateY(-50%);
+  opacity: 0.8;
 }
 
 .special__detail {
@@ -1090,6 +1127,8 @@
   margin: 24px 0;
   font-size: 3.6rem;
   color: var(--heading-color);
+  color: #ffffff; /* màu chữ sáng */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* đổ bóng */
 }
 
 .footer__contact__input {
