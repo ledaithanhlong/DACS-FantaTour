@@ -185,12 +185,17 @@
   right: 0;
   width: 320px;
   background-color: var(--white-color);
-  box-shadow: 0 0 2px #ccc;
+  box-shadow: -2px 0 6px rgba(0,0,0,0.2); /* Đổ bóng bên trái */
   overflow-y: scroll;
   transform: translateX(100%);
   opacity: 0;
-  transition: all ease-in 0.2s;
-  will-change: transform opacity;
+  transition: all ease-in 0.3s;
+  will-change: transform, opacity;
+  z-index: 999; /* Đảm bảo nổi trên navbar */
+}
+
+.navbar__menu:hover {
+  pointer-events: auto;
 }
 
 #navbar__menu-input:checked ~ .navbar__menu {
@@ -785,7 +790,7 @@
   width: -moz-fit-content;
   width: fit-content;
   text-decoration: none;
-  background-color: var(--green-color);
+  background: linear-gradient(90deg, #005bea, #00aaff);
   text-transform: uppercase;
   color: var(--white-color);
   margin: 16px 0;
@@ -1218,7 +1223,7 @@
 }
 
 .footer__copyright {
-  background-color: var(--blue-color);
+  background: linear-gradient(90deg, #005bea, #00aaff);
   color: var(--white-color);
   position: absolute;
   bottom: 0;
