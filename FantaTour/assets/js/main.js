@@ -29,4 +29,10 @@ const menuInput = document.getElementById('navbar__menu-input');
 
 showMessage("Đã gửi yêu cầu thành công!");
 
-
+function navigateToPage() {
+  var select = document.getElementById("destinationSelect");
+  var selectedValue = select.value;
+  if (selectedValue) {
+      window.location.href = selectedValue; // Chuyển hướng đến trang tương ứng
+  }
+}
