@@ -5,6 +5,7 @@
     background-color: #f8f9fa;
     font-family: 'Segoe UI', sans-serif;
     color: #333;
+    line-height: 1.2; /* Tăng khoảng cách giữa các dòng */
 }
 
 /* Tiêu đề chính */
@@ -116,6 +117,7 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     outline: none;
+    line-height: 1.2; /* Tăng khoảng cách giữa các dòng */
 }
 
 .support-form textarea {
