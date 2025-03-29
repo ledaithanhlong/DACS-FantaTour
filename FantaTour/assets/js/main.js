@@ -36,3 +36,4 @@ function navigateToPage() {
       window.location.href = selectedValue; // Chuyển hướng đến trang tương ứng
   }
 }
+
