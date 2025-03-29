@@ -25,6 +25,7 @@
 }
 
 .feedback {
+    position: relative; /* Để chứa hình nền */
     margin-bottom: 15px;
     padding: 15px;
     background: white;
@@ -48,11 +49,12 @@
 }
 
 .feedback-img {
-    width: 100%;
-    max-width: 500px; /* Đặt kích thước lớn hơn */
+    width: 100%; /* Hình ảnh sẽ chiếm toàn bộ chiều rộng của phần tử chứa */
+    max-width: 100%; /* Loại bỏ giới hạn chiều rộng */
     height: auto;
     border-radius: 8px;
     margin-top: 10px;
+    object-fit: cover; /* Đảm bảo ảnh hiển thị đẹp, không bị méo */
 }
 
 .form-section form {
@@ -126,4 +128,89 @@
     border: 1px solid #ccc;
     padding: 5px;
     background: white;
+}
+
+.feedback-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 0;
+    border-radius: 25px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: #f1f1f1;
+    flex: 1; /* Mỗi nút sẽ tự giãn để vừa khung */
+    margin: 0 5px;
+}
+
+.btn svg {
+    width: 20px;
+    height: 20px;
+    fill: #666;
+    transition: fill 0.3s;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.btn.upvote {
+    color: #007BFF;
+}
+
+.btn.upvote svg {
+    fill: #007BFF;
+}
+
+.btn.upvote:hover {
+    background-color: #cce5ff;
+}
+
+.btn.downvote {
+    color: #DC3545;
+}
+
+.btn.downvote svg {
+    fill: #DC3545;
+}
+
+.btn.downvote:hover {
+    background-color: #f8d7da;
+}
+
+.btn.comment {
+    color: #28A745;
+}
+
+.btn.comment svg {
+    fill: #28A745;
+}
+
+.btn.comment:hover {
+    background-color: #d4edda;
+}
+
+/* Nút Share được đẩy sát lề phải */
+.btn-share {
+    background-color: #007bff;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+}
+
+.btn-share:hover {
+    background-color: #0056b3;
 }
