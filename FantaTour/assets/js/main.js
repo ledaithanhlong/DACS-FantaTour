@@ -15,7 +15,33 @@ const menuInput = document.getElementById('navbar__menu-input');
     }
   });
 
-  
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = [
+        "./assets/img/background.jpg",
+        "./assets/img/PuLuong.png",
+        "./assets/img/WHENVIETNAM0124.jpg",
+        "./assets/img/hang-son-doong.jpg"
+    ];
+
+    let currentIndex = 0;
+    const searchSection = document.querySelector(".search");
+
+    function changeBackground() {
+        const nextIndex = (currentIndex + 1) % images.length;
+        const nextImage = images[nextIndex];
+
+        // Thêm lớp để trượt ảnh
+        searchSection.style.backgroundImage = `url(${nextImage})`;
+        searchSection.classList.add("slide-animation");
+
+        setTimeout(() => {
+            searchSection.classList.remove("slide-animation");
+            currentIndex = nextIndex;
+        }); 
+    }
+
+    setInterval(changeBackground, 10000); // Đổi ảnh mỗi 10 giây
+});
 
   function showMessage(text, color = "green") {
     message.textContent = text;

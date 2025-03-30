@@ -530,11 +530,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: background-image 1s ease-in-out;
   -webkit-filter: grayscale(36%);
   filter: grayscale(36%);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.slide-animation {
+  transform: translateX(-100%);
 }
 
 .search__wrap {
