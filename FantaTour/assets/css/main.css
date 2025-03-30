@@ -538,8 +538,8 @@
   align-items: center;
 }
 
-.slide-animation {
-  transform: translateX(-100%);
+.fade-out {
+  opacity: 0.5; /* Làm mờ ảnh cũ trước khi đổi */
 }
 
 .search__wrap {
