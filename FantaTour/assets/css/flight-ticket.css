@@ -1,15 +1,6 @@
 /*========Google Fonts=======*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quattrocento:wght@400;700&display=swap');
 
-/* General Styles */
- *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
-
 body {
     background-image: url(/FantaTour/assets/img/bg.png);
     background-position: right;
@@ -18,7 +9,11 @@ body {
     background-attachment: fixed;
     font-family: "Lato", sans-serif;
     overflow: hidden;
-  }
+}
+
+html, body {
+    overflow: auto; /* Cho phép cuộn */
+}
 
 /* Color Variables */
 :root{
@@ -130,7 +125,7 @@ button[type="submit"]:hover{
 }
 
 .slider-header h2{
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -224,8 +219,9 @@ button[type="submit"]:hover{
 
 .right-section img{
     transform: rotate(20deg);
-    width: 130%;
+    width: 120%;
     border-radius: 10px;
+    
 }
 
 /* Responsive Styles */
