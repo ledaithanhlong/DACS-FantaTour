@@ -20,7 +20,6 @@ const menuInput = document.getElementById('navbar__menu-input');
         "./assets/img/background.jpg",
         "./assets/img/PuLuong.png",
         "./assets/img/WHENVIETNAM0124.jpg",
-        "./assets/img/hang-son-doong.jpg"
     ];
 
     let currentIndex = 0;
