@@ -29,359 +29,295 @@ body {
 }
 
 .vehicle-rental-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-    padding: 40px;
-    max-width: 1400px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 .vehicle-card {
-    background: #fff;
-    border-radius: 20px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin-bottom: 20px;
+    min-height: 250px;
 }
 
-.vehicle-card img {
+.vehicle-image {
+    flex: 0 0 40%;
+}
+
+.vehicle-image img {
     width: 100%;
-    height: 220px;
+    height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
 }
 
-.vehicle-card:hover img {
-    transform: scale(1.05);
-}
-
-.vehicle-info {
+.vehicle-details {
+    flex: 1;
     padding: 20px;
-    background: linear-gradient(to top, #d8e4fa 0%, #ffffff 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.vehicle-info h3 {
-    font-size: 22px;
-    color: #2d3436;
-    margin-bottom: 8px;
-    font-weight: 600;
-}
-
-.price {
-    font-size: 18px;
-    color: #e17055;
+.vehicle-details h3 {
+    color: #1A3C6D;
+    font-size: 24px;
     font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 10px;
-    line-height: 2;
 }
 
-.description {
-    font-size: 14px;
-    color: #636e72;
-    margin-bottom: 12px;
+.rating .stars {
+    color: #FFD740;
+    font-size: 16px;
 }
 
-.seats {
+.rating .score {
+    color: #555;
     font-size: 14px;
-    color: #0984e3;
+}
+
+.vehicle-details .description {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 15px;
+}
+
+.amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-bottom: 15px;
 }
 
-.seats i {
-    margin-right: 8px;
+.amenity-chip {
+    background-color: #F0F4F8;
+    color: #1A3C6D;
+    padding: 5px 12px;
+    border-radius: 16px;
+    font-size: 14px;
+    border: 1px solid #DDE4EE;
+}
+
+.vehicle-details .price {
+    color: #1A3C6D;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .buttons {
     display: flex;
     gap: 10px;
-    justify-content: space-between;
+    align-self: flex-end;
 }
 
-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    padding: 10px 0;
-    border-radius: 25px;
+.rent-btn, .preview-btn, .info-btn {
+    padding: 12px 24px;
     border: none;
-    font-size: 14px;
-    font-weight: bold;
+    border-radius: 25px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    background-color: #f1f1f1;
-    flex: 1;
-    margin: 0 5px;
-}
-
-button i {
     font-size: 16px;
-    transition: color 0.3s;
-}
-
-button:hover {
-    background-color: #e0e0e0;
-    transform: scale(1.05);
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .rent-btn {
-    color: #28A745;
-}
-
-.rent-btn i {
-    color: #28A745;
+    background-color: #00C4B4;
+    color: white;
 }
 
 .rent-btn:hover {
-    background-color: #d4edda;
+    background-color: #00A69A;
+    transform: scale(1.05);
 }
 
 .preview-btn {
-    color: #007BFF;
-}
-
-.preview-btn i {
-    color: #007BFF;
+    background-color: #F0F4F8;
+    color: #1A3C6D;
 }
 
 .preview-btn:hover {
-    background-color: #cce5ff;
+    background-color: #DDE4EE;
+    transform: scale(1.05);
 }
 
-.info-btn, .details-btn {
-    color: #6f42c1;
+.info-btn {
+    background-color: #F0F4F8;
+    color: #1A3C6D;
 }
 
-.info-btn i, .details-btn i {
-    color: #6f42c1;
+.info-btn:hover {
+    background-color: #DDE4EE;
+    transform: scale(1.05);
 }
 
-.info-btn:hover, .details-btn:hover {
-    background-color: #e2d6f5;
-}
-
-/* CSS cho Popup */
+/* Popup styles (giữ nguyên từ thiết kế gốc của bạn) */
 .modal {
     display: none;
     position: fixed;
-    top: 0;
+    z-index: 1000;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* CSS cho Popup */
 .modal-content {
-    background: #f9fafc; /* Màu nền nhẹ, chuyên nghiệp */
-    padding: 40px; /* Tăng padding để thoáng hơn */
-    border-radius: 20px; /* Bo góc lớn hơn */
-    max-width: 800px; /* Tăng chiều rộng để bằng với ảnh */
-    width: 90%; /* Đảm bảo phản hồi tốt trên mọi màn hình */
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 25px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 800px;
     position: relative;
-    max-height: 85vh;
-    overflow-y: auto;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ để tạo chiều sâu */
-    border: 1px solid #e0e4e8; /* Viền nhẹ */
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 28px; /* Tăng kích thước nút đóng */
-    cursor: pointer;
-    color: #333;
-}
-
-.close:hover {
-    color: #ff0000;
-}
-
-.gallery {
-    display: flex;
-    gap: 15px; /* Tăng khoảng cách giữa các ảnh */
-    overflow-x: auto;
-    margin-bottom: 20px;
-}
-
-.gallery-item {
-    flex: 0 0 auto; /* Đảm bảo các mục không co giãn */
-    text-align: center; /* Căn giữa tiêu đề và hình ảnh */
-    width: 220px;
-}
-
-.gallery-item h4 {
-    margin-top: 10;
-    font-size: 20px; /* Kích thước tiêu đề nhỏ */
-    color: #2d3e50; /* Màu xám đậm */
-    font-weight: bold; /* Làm đậm chữ */
-    margin-bottom: 8px; /* Khoảng cách giữa tiêu đề và hình ảnh */
-    text-transform: uppercase; /* Chuyển thành chữ in hoa */
-}
-
-.video-section h4 {
-    font-size: 1.5rem; /* Điều chỉnh kích thước chữ */
-    font-weight: bold; /* Làm đậm chữ */
-    text-transform: uppercase; /* Viết hoa toàn bộ */
-    color: #333; /* Đổi màu chữ nếu cần */
-    font-size: 20px;
-}
-
-.gallery img {
-    width: 200px; /* Tăng kích thước ảnh */
-    height: 120px;
-    object-fit: cover;
-    border-radius: 8px; /* Bo góc lớn hơn */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho hình ảnh */
-}
-
-video {
-    width: 100%;
-    margin: 15px 0;
-    border-radius: 8px;
-    background: #1a1a1a; /* Nền đen cho video */
+    font-size: 18px; /* Tăng kích thước chữ cơ bản */
 }
 
 .modal-content h2 {
     font-size: 32px; /* Tăng kích thước tiêu đề chính */
-    margin-bottom: 25px;
-    color: #1a2b49; /* Màu xanh đậm chuyên nghiệp */
-    font-weight: 700; /* Đậm hơn */
-    letter-spacing: 0.5px; /* Tăng khoảng cách chữ */
-    text-transform: uppercase; /* Chuyển thành chữ in hoa */
-    border-bottom: 2px solid #e0e4e8; /* Thêm đường viền dưới */
-    padding-bottom: 10px; /* Khoảng cách dưới đường viền */
-    transition: color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
-    line-height: 1.3;
-}
-
-.modal-content h2:hover {
-    color: #007bff; /* Màu xanh dương khi hover */
-}
-
-.modal-content h3 {
-    font-size: 24px; /* Tăng kích thước tiêu đề phụ */
-    margin: 30px 0 15px;
-    color: #2d3e50; /* Màu xám đậm */
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    position: relative;
-    padding-left: 30px; /* Khoảng cách để chừa chỗ cho biểu tượng */
-    transition: color 0.3s ease;
-}
-
-.modal-content h3::before {
-    content: "\f05a"; /* Biểu tượng thông tin từ Font Awesome */
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #007bff; /* Màu xanh dương cho biểu tượng */
-    font-size: 20px;
-}
-
-.modal-content h3:hover {
-    color: #007bff; /* Màu xanh dương khi hover */
-}
-
-.modal-content ul {
-    list-style: none; /* Bỏ dấu đầu dòng mặc định */
-    padding-left: 0;
-    margin-bottom: 25px;
-}
-
-.modal-content ul li {
-    font-size: 18px; /* Kích thước chữ vừa phải */
-    color: #4a5568; /* Màu xám đậm */
-    line-height: 1.8; /* Tăng khoảng cách dòng */
-    position: relative;
-    padding-left: 25px; /* Khoảng cách để chừa chỗ cho dấu đầu dòng tùy chỉnh */
-    margin-bottom: 10px; /* Khoảng cách giữa các mục */
-    transition: color 0.3s ease;
-}
-
-.modal-content ul li::before {
-    content: "\f058"; /* Biểu tượng dấu check từ Font Awesome */
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    position: absolute;
-    left: 0;
-    color: #28a745; /* Màu xanh lá cho dấu check */
-    font-size: 16px;
-}
-
-.modal-content ul li:hover {
-    color: #1a2b49; /* Màu đậm hơn khi hover */
-}
-
-.modal-content p {
-    font-size: 18px; /* Kích thước chữ vừa phải */
-    color: #4a5568;
-    line-height: 1.8;
+    color: #1A3C6D;
     margin-bottom: 20px;
 }
 
-/* Định dạng các thông tin quan trọng trong đoạn văn (ví dụ: giá thuê, hotline) */
-.modal-content p strong {
-    color: #e53e3e; /* Màu đỏ để nổi bật */
-    font-weight: 600;
+.modal-content h3 {
+    font-size: 26px; /* Tăng kích thước tiêu đề phụ */
+    color: #1A3C6D;
+    margin: 15px 0 10px;
 }
 
-/* Tối ưu cho mobile */
+.modal-content h4 {
+    font-size: 22px; /* Tăng kích thước tiêu đề nhỏ */
+    color: #1A3C6D;
+    margin-bottom: 8px;
+}
+
+.modal-content p {
+    font-size: 18px; /* Tăng kích thước đoạn văn */
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.modal-content ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.modal-content li {
+    font-size: 18px; /* Tăng kích thước chữ trong danh sách */
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 32px; /* Tăng kích thước nút đóng */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.video-section video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
 @media (max-width: 768px) {
-    .vehicle-rental-content {
-        grid-template-columns: 1fr;
-        padding: 20px;
+    .vehicle-card {
+        flex-direction: column;
+        min-height: auto;
     }
 
-    .vehicle-card img {
+    .vehicle-image {
+        flex: none;
         height: 200px;
     }
 
-    .modal-content {
-        padding: 25px; /* Giảm padding trên mobile */
-        max-width: 95%; /* Tăng chiều rộng trên mobile */
-        border-radius: 15px; /* Bo góc nhỏ hơn */
+    .vehicle-details {
+        padding: 15px;
     }
 
-    .gallery img {
-        width: 150px; /* Giảm kích thước ảnh trên mobile */
-        height: 90px;
+    .vehicle-details h3 {
+        font-size: 20px;
+    }
+
+    .vehicle-details .price {
+        font-size: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-self: stretch;
+    }
+
+    .rent-btn, .preview-btn, .info-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .modal-content {
+        padding: 20px;
+        font-size: 16px; /* Giảm nhẹ trên mobile để cân đối */
     }
 
     .modal-content h2 {
-        font-size: 26px; /* Giảm kích thước tiêu đề chính */
-        margin-bottom: 20px;
+        font-size: 28px;
     }
 
     .modal-content h3 {
-        font-size: 20px; /* Giảm kích thước tiêu đề phụ */
-        margin: 25px 0 10px;
-        padding-left: 25px;
+        font-size: 22px;
     }
 
-    .modal-content h3::before {
-        font-size: 18px;
+    .modal-content h4 {
+        font-size: 20px;
     }
 
-    .modal-content ul li,
     .modal-content p {
-        font-size: 16px; /* Giảm kích thước chữ trên mobile */
-        line-height: 1.6;
+        font-size: 16px;
     }
 
-    .modal-content ul li {
-        padding-left: 20px;
+    .modal-content li {
+        font-size: 16px;
     }
 
-    .modal-content ul li::before {
-        font-size: 14px;
+    .close {
+        font-size: 28px;
     }
 }

@@ -196,20 +196,31 @@
 
         <!-- Nội dung trang Thuê Xe -->
         <div class="vehicle-rental-content">
+            <!-- Toyota Fortuner -->
             <div class="vehicle-card">
-                <img src="./assets/img/Toyota Fortuner.jpg" alt="Xe 7 chỗ">
-                <div class="vehicle-info">
+                <div class="vehicle-image">
+                    <img src="./assets/img/Toyota Fortuner.jpg" alt="Xe 7 chỗ">
+                </div>
+                <div class="vehicle-details">
                     <h3>Toyota Fortuner</h3>
-                    <p class="price">1.200.000 VNĐ/ngày</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="score">4.8 (100 đánh giá)</span>
+                    </div>
                     <p class="description">Xe SUV mạnh mẽ, lý tưởng cho du lịch gia đình</p>
-                    <p class="seats"><i class="fas fa-users"></i> 7 chỗ</p>
+                    <div class="amenities">
+                        <span class="amenity-chip">7 chỗ</span>
+                        <span class="amenity-chip">Động cơ mạnh mẽ</span>
+                        <span class="amenity-chip">An toàn tiên tiến</span>
+                    </div>
+                    <div class="price">1.200.000 VNĐ/ngày</div>
                     <div class="buttons">
                         <button class="rent-btn">Thuê Ngay</button>
                         <button class="preview-btn" data-modal="preview-modal-fortuner">Xem Xe</button>
                         <button class="info-btn" data-modal="details-modal-fortuner">Thông Tin</button>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Xem Xe -->
                 <div id="preview-modal-fortuner" class="modal">
                     <div class="modal-content">
@@ -233,7 +244,6 @@
                             <h4>Video xe</h4>
                             <video src="./assets/videos/fortuner-video.mp4" controls></video>
                         </div>
-                        
                         <h3>Tính năng nổi bật</h3>
                         <ul>
                             <li>Động cơ mạnh mẽ, phù hợp địa hình khó.</li>
@@ -242,7 +252,7 @@
                         </ul>
                     </div>
                 </div>
-
+        
                 <!-- Popup cho Thông Tin -->
                 <div id="details-modal-fortuner" class="modal">
                     <div class="modal-content">
@@ -281,22 +291,32 @@
                     </div>
                 </div>
             </div>
-    
+        
             <!-- Kia Sedona -->
             <div class="vehicle-card">
-                <img src="./assets/img/Kia Sedona.webp" alt="Xe 7 chỗ">
-                <div class="vehicle-info">
+                <div class="vehicle-image">
+                    <img src="./assets/img/Kia Sedona.webp" alt="Xe 7 chỗ">
+                </div>
+                <div class="vehicle-details">
                     <h3>Kia Sedona</h3>
-                    <p class="price">1.400.000 VNĐ/ngày</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="score">4.7 (80 đánh giá)</span>
+                    </div>
                     <p class="description">MPV cao cấp, không gian thoải mái</p>
-                    <p class="seats"><i class="fas fa-users"></i> 7 chỗ</p>
+                    <div class="amenities">
+                        <span class="amenity-chip">7 chỗ</span>
+                        <span class="amenity-chip">Cửa trượt tự động</span>
+                        <span class="amenity-chip">Giải trí hiện đại</span>
+                    </div>
+                    <div class="price">1.400.000 VNĐ/ngày</div>
                     <div class="buttons">
                         <button class="rent-btn">Thuê Ngay</button>
                         <button class="preview-btn" data-modal="preview-modal-sedona">Xem Xe</button>
                         <button class="info-btn" data-modal="details-modal-sedona">Thông Tin</button>
                     </div>
                 </div>
-
+        
                 <!-- Popup cho Xem Xe -->
                 <div id="preview-modal-sedona" class="modal">
                     <div class="modal-content">
@@ -328,7 +348,7 @@
                         </ul>
                     </div>
                 </div>
-
+        
                 <!-- Popup cho Thông Tin -->
                 <div id="details-modal-sedona" class="modal">
                     <div class="modal-content">
@@ -367,22 +387,32 @@
                     </div>
                 </div>
             </div>
-    
-            <!-- Mitsubishi Xpander (đã có sẵn) -->
+        
+            <!-- Mitsubishi Xpander -->
             <div class="vehicle-card">
-                <img src="./assets/img/Mitsubishi Xpander.webp" alt="Xe 7 chỗ">
-                <div class="vehicle-info">
+                <div class="vehicle-image">
+                    <img src="./assets/img/Mitsubishi Xpander.webp" alt="Xe 7 chỗ">
+                </div>
+                <div class="vehicle-details">
                     <h3>Mitsubishi Xpander</h3>
-                    <p class="price">1.000.000 VNĐ/ngày</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="score">4.5 (60 đánh giá)</span>
+                    </div>
                     <p class="description">MPV tiết kiệm, phù hợp gia đình nhỏ</p>
-                    <p class="seats"><i class="fas fa-users"></i> 7 chỗ</p>
+                    <div class="amenities">
+                        <span class="amenity-chip">7 chỗ</span>
+                        <span class="amenity-chip">Tiết kiệm nhiên liệu</span>
+                        <span class="amenity-chip">Màn hình cảm ứng</span>
+                    </div>
+                    <div class="price">1.000.000 VNĐ/ngày</div>
                     <div class="buttons">
                         <button class="rent-btn">Thuê Ngay</button>
                         <button class="preview-btn" data-modal="preview-modal-xpander">Xem Xe</button>
                         <button class="info-btn" data-modal="details-modal-xpander">Thông Tin</button>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Xem Xe -->
                 <div id="preview-modal-xpander" class="modal">
                     <div class="modal-content">
@@ -414,7 +444,7 @@
                         </ul>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Thông Tin -->
                 <div id="details-modal-xpander" class="modal">
                     <div class="modal-content">
@@ -445,22 +475,32 @@
                     </div>
                 </div>
             </div>
-    
+        
             <!-- Hyundai Solati -->
             <div class="vehicle-card">
-                <img src="./assets/img/Hyundai Solati.jpg" alt="Xe 16 chỗ">
-                <div class="vehicle-info">
+                <div class="vehicle-image">
+                    <img src="./assets/img/Hyundai Solati.jpg" alt="Xe 16 chỗ">
+                </div>
+                <div class="vehicle-details">
                     <h3>Hyundai Solati</h3>
-                    <p class="price">1.800.000 VNĐ/ngày</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="score">4.6 (70 đánh giá)</span>
+                    </div>
                     <p class="description">Xe minibus tiện nghi, phù hợp nhóm nhỏ</p>
-                    <p class="seats"><i class="fas fa-users"></i> 16 chỗ</p>
+                    <div class="amenities">
+                        <span class="amenity-chip">16 chỗ</span>
+                        <span class="amenity-chip">Điều hòa đa vùng</span>
+                        <span class="amenity-chip">Vận hành êm ái</span>
+                    </div>
+                    <div class="price">1.800.000 VNĐ/ngày</div>
                     <div class="buttons">
                         <button class="rent-btn">Thuê Ngay</button>
                         <button class="preview-btn" data-modal="preview-modal-solati">Xem Xe</button>
                         <button class="info-btn" data-modal="details-modal-solati">Thông Tin</button>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Xem Xe -->
                 <div id="preview-modal-solati" class="modal">
                     <div class="modal-content">
@@ -492,7 +532,7 @@
                         </ul>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Thông Tin -->
                 <div id="details-modal-solati" class="modal">
                     <div class="modal-content">
@@ -523,22 +563,32 @@
                     </div>
                 </div>
             </div>
-
+        
             <!-- Toyota HiAce -->
             <div class="vehicle-card">
-                <img src="./assets/img/Toyota HiAce.jpg" alt="Xe 15 chỗ">
-                <div class="vehicle-info">
+                <div class="vehicle-image">
+                    <img src="./assets/img/Toyota HiAce.jpg" alt="Xe 15 chỗ">
+                </div>
+                <div class="vehicle-details">
                     <h3>Toyota HiAce</h3>
-                    <p class="price">1.900.000 VNĐ/ngày</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="score">4.6 (65 đánh giá)</span>
+                    </div>
                     <p class="description">Xe van tiện nghi, phù hợp nhóm nhỏ</p>
-                    <p class="seats"><i class="fas fa-users"></i> 15 chỗ</p>
+                    <div class="amenities">
+                        <span class="amenity-chip">15 chỗ</span>
+                        <span class="amenity-chip">Điều hòa đa vùng</span>
+                        <span class="amenity-chip">Vận hành ổn định</span>
+                    </div>
+                    <div class="price">1.900.000 VNĐ/ngày</div>
                     <div class="buttons">
                         <button class="rent-btn">Thuê Ngay</button>
                         <button class="preview-btn" data-modal="preview-modal-hiace">Xem Xe</button>
                         <button class="info-btn" data-modal="details-modal-hiace">Thông Tin</button>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Xem Xe -->
                 <div id="preview-modal-hiace" class="modal">
                     <div class="modal-content">
@@ -570,7 +620,7 @@
                         </ul>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Thông Tin -->
                 <div id="details-modal-hiace" class="modal">
                     <div class="modal-content">
@@ -601,22 +651,32 @@
                     </div>
                 </div>
             </div>
-    
+        
             <!-- Ford Transit -->
             <div class="vehicle-card">
-                <img src="./assets/img/Ford Transit.jpeg" alt="Xe 16 chỗ">
-                <div class="vehicle-info">
+                <div class="vehicle-image">
+                    <img src="./assets/img/Ford Transit.jpeg" alt="Xe 16 chỗ">
+                </div>
+                <div class="vehicle-details">
                     <h3>Ford Transit</h3>
-                    <p class="price">1.800.000 VNĐ/ngày</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="score">4.6 (75 đánh giá)</span>
+                    </div>
                     <p class="description">Minibus tiện nghi cho nhóm bạn bè</p>
-                    <p class="seats"><i class="fas fa-users"></i> 16 chỗ</p>
+                    <div class="amenities">
+                        <span class="amenity-chip">16 chỗ</span>
+                        <span class="amenity-chip">Điều hòa đa vùng</span>
+                        <span class="amenity-chip">Vận hành ổn định</span>
+                    </div>
+                    <div class="price">1.800.000 VNĐ/ngày</div>
                     <div class="buttons">
                         <button class="rent-btn">Thuê Ngay</button>
                         <button class="preview-btn" data-modal="preview-modal-transit">Xem Xe</button>
                         <button class="info-btn" data-modal="details-modal-transit">Thông Tin</button>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Xem Xe -->
                 <div id="preview-modal-transit" class="modal">
                     <div class="modal-content">
@@ -648,7 +708,7 @@
                         </ul>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Thông Tin -->
                 <div id="details-modal-transit" class="modal">
                     <div class="modal-content">
@@ -679,22 +739,32 @@
                     </div>
                 </div>
             </div>
-
+        
             <!-- Thaco County -->
             <div class="vehicle-card">
-                <img src="./assets/img/Thaco County.jpg" alt="Xe 29 chỗ">
-                <div class="vehicle-info">
+                <div class="vehicle-image">
+                    <img src="./assets/img/Thaco County.jpg" alt="Xe 29 chỗ">
+                </div>
+                <div class="vehicle-details">
                     <h3>Thaco County</h3>
-                    <p class="price">2.500.000 VNĐ/ngày</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="score">4.5 (50 đánh giá)</span>
+                    </div>
                     <p class="description">Xe bus nhỏ gọn, hoàn hảo cho đoàn du lịch</p>
-                    <p class="seats"><i class="fas fa-users"></i> 29 chỗ</p>
+                    <div class="amenities">
+                        <span class="amenity-chip">29 chỗ</span>
+                        <span class="amenity-chip">Điều hòa mạnh mẽ</span>
+                        <span class="amenity-chip">Đường dài</span>
+                    </div>
+                    <div class="price">2.500.000 VNĐ/ngày</div>
                     <div class="buttons">
                         <button class="rent-btn">Thuê Ngay</button>
                         <button class="preview-btn" data-modal="preview-modal-county">Xem Xe</button>
                         <button class="info-btn" data-modal="details-modal-county">Thông Tin</button>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Xem Xe -->
                 <div id="preview-modal-county" class="modal">
                     <div class="modal-content">
@@ -726,7 +796,7 @@
                         </ul>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Thông Tin -->
                 <div id="details-modal-county" class="modal">
                     <div class="modal-content">
@@ -757,22 +827,32 @@
                     </div>
                 </div>
             </div>
-    
+        
             <!-- Isuzu Samco -->
             <div class="vehicle-card">
-                <img src="./assets/img/Isuzu Samco.jpg" alt="Xe 29 chỗ">
-                <div class="vehicle-info">
+                <div class="vehicle-image">
+                    <img src="./assets/img/Isuzu Samco.jpg" alt="Xe 29 chỗ">
+                </div>
+                <div class="vehicle-details">
                     <h3>Isuzu Samco</h3>
-                    <p class="price">2.600.000 VNĐ/ngày</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="score">4.5 (55 đánh giá)</span>
+                    </div>
                     <p class="description">Xe bền bỉ, phù hợp đường dài</p>
-                    <p class="seats"><i class="fas fa-users"></i> 29 chỗ</p>
+                    <div class="amenities">
+                        <span class="amenity-chip">29 chỗ</span>
+                        <span class="amenity-chip">Điều hòa mạnh mẽ</span>
+                        <span class="amenity-chip">Đường dài</span>
+                    </div>
+                    <div class="price">2.600.000 VNĐ/ngày</div>
                     <div class="buttons">
                         <button class="rent-btn">Thuê Ngay</button>
                         <button class="preview-btn" data-modal="preview-modal-samco">Xem Xe</button>
                         <button class="info-btn" data-modal="details-modal-samco">Thông Tin</button>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Xem Xe -->
                 <div id="preview-modal-samco" class="modal">
                     <div class="modal-content">
@@ -804,7 +884,7 @@
                         </ul>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Thông Tin -->
                 <div id="details-modal-samco" class="modal">
                     <div class="modal-content">
@@ -835,22 +915,32 @@
                     </div>
                 </div>
             </div>
-    
+        
             <!-- Hyundai Universe -->
             <div class="vehicle-card">
-                <img src="./assets/img/Hyundai Universe.jpg" alt="Xe 35 chỗ">
-                <div class="vehicle-info">
+                <div class="vehicle-image">
+                    <img src="./assets/img/Hyundai Universe.jpg" alt="Xe 35 chỗ">
+                </div>
+                <div class="vehicle-details">
                     <h3>Hyundai Universe</h3>
-                    <p class="price">3.000.000 VNĐ/ngày</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="score">4.8 (90 đánh giá)</span>
+                    </div>
                     <p class="description">Xe sang trọng, đầy đủ tiện ích</p>
-                    <p class="seats"><i class="fas fa-users"></i> 35 chỗ</p>
+                    <div class="amenities">
+                        <span class="amenity-chip">35 chỗ</span>
+                        <span class="amenity-chip">Giải trí cao cấp</span>
+                        <span class="amenity-chip">Vận hành êm ái</span>
+                    </div>
+                    <div class="price">3.000.000 VNĐ/ngày</div>
                     <div class="buttons">
                         <button class="rent-btn">Thuê Ngay</button>
                         <button class="preview-btn" data-modal="preview-modal-universe">Xem Xe</button>
                         <button class="info-btn" data-modal="details-modal-universe">Thông Tin</button>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Xem Xe -->
                 <div id="preview-modal-universe" class="modal">
                     <div class="modal-content">
@@ -882,7 +972,7 @@
                         </ul>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Thông Tin -->
                 <div id="details-modal-universe" class="modal">
                     <div class="modal-content">
@@ -913,22 +1003,32 @@
                     </div>
                 </div>
             </div>
-    
+        
             <!-- Thaco Town -->
             <div class="vehicle-card">
-                <img src="./assets/img/Thaco Town.jpg" alt="Xe 35 chỗ">
-                <div class="vehicle-info">
+                <div class="vehicle-image">
+                    <img src="./assets/img/Thaco Town.jpg" alt="Xe 35 chỗ">
+                </div>
+                <div class="vehicle-details">
                     <h3>Thaco Town</h3>
-                    <p class="price">2.900.000 VNĐ/ngày</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="score">4.7 (85 đánh giá)</span>
+                    </div>
                     <p class="description">Xe rộng rãi, lý tưởng cho tour lớn</p>
-                    <p class="seats"><i class="fas fa-users"></i> 35 chỗ</p>
+                    <div class="amenities">
+                        <span class="amenity-chip">35 chỗ</span>
+                        <span class="amenity-chip">Điều hòa mạnh mẽ</span>
+                        <span class="amenity-chip">Tour lớn</span>
+                    </div>
+                    <div class="price">2.900.000 VNĐ/ngày</div>
                     <div class="buttons">
                         <button class="rent-btn">Thuê Ngay</button>
                         <button class="preview-btn" data-modal="preview-modal-town">Xem Xe</button>
                         <button class="info-btn" data-modal="details-modal-town">Thông Tin</button>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Xem Xe -->
                 <div id="preview-modal-town" class="modal">
                     <div class="modal-content">
@@ -960,7 +1060,7 @@
                         </ul>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Thông Tin -->
                 <div id="details-modal-town" class="modal">
                     <div class="modal-content">
@@ -991,22 +1091,32 @@
                     </div>
                 </div>
             </div>
-    
+        
             <!-- Hyundai Aero -->
             <div class="vehicle-card">
-                <img src="./assets/img/Hyundai Aero.jpeg" alt="Xe 45 chỗ">
-                <div class="vehicle-info">
+                <div class="vehicle-image">
+                    <img src="./assets/img/Hyundai Aero.jpeg" alt="Xe 45 chỗ">
+                </div>
+                <div class="vehicle-details">
                     <h3>Hyundai Aero</h3>
-                    <p class="price">3.500.000 VNĐ/ngày</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="score">4.9 (100 đánh giá)</span>
+                    </div>
                     <p class="description">Xe cao cấp cho đoàn đông người</p>
-                    <p class="seats"><i class="fas fa-users"></i> 45 chỗ</p>
+                    <div class="amenities">
+                        <span class="amenity-chip">45 chỗ</span>
+                        <span class="amenity-chip">Giải trí cao cấp</span>
+                        <span class="amenity-chip">Vận hành êm ái</span>
+                    </div>
+                    <div class="price">3.500.000 VNĐ/ngày</div>
                     <div class="buttons">
                         <button class="rent-btn">Thuê Ngay</button>
                         <button class="preview-btn" data-modal="preview-modal-aero">Xem Xe</button>
                         <button class="info-btn" data-modal="details-modal-aero">Thông Tin</button>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Xem Xe -->
                 <div id="preview-modal-aero" class="modal">
                     <div class="modal-content">
@@ -1038,7 +1148,7 @@
                         </ul>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Thông Tin -->
                 <div id="details-modal-aero" class="modal">
                     <div class="modal-content">
@@ -1072,19 +1182,29 @@
         
             <!-- Thaco Meadow -->
             <div class="vehicle-card">
-                <img src="./assets/img/Thaco Meadow.jpeg" alt="Xe 35 chỗ">
-                <div class="vehicle-info">
+                <div class="vehicle-image">
+                    <img src="./assets/img/Thaco Meadow.jpeg" alt="Xe 35 chỗ">
+                </div>
+                <div class="vehicle-details">
                     <h3>Thaco Meadow</h3>
-                    <p class="price">3.000.000 VNĐ/ngày</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="score">4.7 (80 đánh giá)</span>
+                    </div>
                     <p class="description">Xe bus trung, lý tưởng cho đoàn vừa</p>
-                    <p class="seats"><i class="fas fa-users"></i> 35 chỗ</p>
+                    <div class="amenities">
+                        <span class="amenity-chip">35 chỗ</span>
+                        <span class="amenity-chip">Điều hòa mạnh mẽ</span>
+                        <span class="amenity-chip">Tour vừa</span>
+                    </div>
+                    <div class="price">3.000.000 VNĐ/ngày</div>
                     <div class="buttons">
                         <button class="rent-btn">Thuê Ngay</button>
                         <button class="preview-btn" data-modal="preview-modal-meadow">Xem Xe</button>
                         <button class="info-btn" data-modal="details-modal-meadow">Thông Tin</button>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Xem Xe -->
                 <div id="preview-modal-meadow" class="modal">
                     <div class="modal-content">
@@ -1116,7 +1236,7 @@
                         </ul>
                     </div>
                 </div>
-    
+        
                 <!-- Popup cho Thông Tin -->
                 <div id="details-modal-meadow" class="modal">
                     <div class="modal-content">
